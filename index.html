@@ -143,6 +143,68 @@
       <div class="body-wrap">
         
   
+    <article id="post-Linux命令行与shell脚本编程大全学习笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/21/Linux命令行与shell脚本编程大全学习笔记/">Linux命令行与shell脚本编程大全学习笔记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Part1-Linux命令行"><a href="#Part1-Linux命令行" class="headerlink" title="Part1 Linux命令行"></a>Part1 Linux命令行</h2><p>##第1章 初识Linux shell<br>1.Linux 可以划分为4个部分：Linux内核，GNU工具，图形化桌面环境，应用软件。<br>2.Linux系统的核心是内核。内核主要负责四种功能：系统软件管理、软件程序管理、硬件设备管理、文件系统管理。</p>
+<p>##a.系统内存管理</p>
+<blockquote>
+<p>内核通过硬盘上的存储空间来实现虚拟内存，这块区域称为<strong><em>交换空间</em></strong>。内核会记录哪些内存页面正在使用中，并自动把一段时间未访问的内存页面复制到交换空间区域，（称为换出，swapping out）—-即使还有可用内存</p>
+<p>##b.软件程序管理</p>
+<p>##c.硬件设备管理</p>
+<p>##d.文件系统管理</p>
+<p>##第2章 走进shell</p>
+<p>##第3章 基本的bash shell命令<br>1.shell提示符:默认bash shell提示符是美元符号($)，这个符号表明shell在等待用户输入。<br>2.bash手册:<br>man命令用来访问存储在Linux系统上的手册页面。<br>3.浏览文件系统:Linux在路径名中不使用驱动器盘符。Linux将文件存储在单个目录结构中，这个目录被称为虚拟目录。Linux虚拟目录结构只包含一个称为根目录的基础目录。在Linux中使用<strong>正斜线(/)</strong>在文件路径中划分目录，而反斜线用来标识转义字符。在Linux PC上安装的第一块硬盘称为根驱动器。根驱动器包含了虚拟目录的核心，其他目录都是从那里开始构建的。Linux会在根驱动器上创建一些特别的目录，我们称之为挂载点(mount point)。挂载点是虚拟目录中用于分配额外存储设备的目录。<br>绝对文件路径：以正斜线(/)作为起始，指明虚拟文件系统的根目录。<br>相对文件路径：以目录名(如果user准备切换到当前工作目录下的一个目录)或是一个特殊字符开始。其中，单点符(.)，表示当前目录。双点符(..)表示当前目录的父目录。<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">遍历目录：cd destination</div><div class="line"><span class="code">          pwd显示出shell会话的当前目录</span></div></pre></td></tr></table></figure></p>
+</blockquote>
+<p>4.文件和目录列表：Linux采用<strong>隐藏文件</strong>保存配置信息。在Linux上，隐藏文件通常是文件名以点号开始的文件。文件类型：目录(d)、文件(-)、字符型文件(c)、块设备(b)<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">显示当前目录下的文件和目录：ls</div><div class="line">参数：-l 长列表格式输出，过滤:？代表一个字符,*代表零个或多个字符,!排除在外，[a-i]指定字母范围</div><div class="line"><span class="code">      -F 区分文件和目录</span></div><div class="line"><span class="code">      -a 显示隐藏+普通文件</span></div><div class="line"><span class="code">      -R 递归选修，列出当前目录下包含子目录中的文件。</span></div><div class="line"><span class="code">      --time=atime 查看访问时间</span></div><div class="line">创建文件:touch(还可改变文件的修改时间)</div><div class="line">复制文件：cp source destination</div><div class="line">参数： -i 强制shell询问是否覆盖已有文件</div><div class="line"><span class="code">       -R 递归复制整个目录内容</span></div></pre></td></tr></table></figure></p>
+        <p class="article-more-link">
+          <a class="article-more-a"  href="/2016/11/21/Linux命令行与shell脚本编程大全学习笔记/#more">more >></a>
+        </p>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/21/Linux命令行与shell脚本编程大全学习笔记/" class="archive-article-date">
+  	<time datetime="2016-11-21T06:04:44.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-21</time>
+</a>
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li></ul>
+	</div>
+
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -257,7 +319,7 @@
     
     	<section class="tools-section tools-section-tag">
     			<div class="widget tagcloud" id="js-tagcloud">
-    				
+    				<a href="/tags/Linux/" style="font-size: 10px;">Linux</a>
     			</div>
     	</section>
     
